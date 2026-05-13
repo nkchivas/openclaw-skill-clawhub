@@ -39,7 +39,17 @@ Search
 
 ```bash
 clawhub search "postgres backups"
+clawhub search "tweet scraper"
+clawhub search "X Twitter automation"
 ```
+
+Inspect package details before installing or recommending a networked plugin
+
+```bash
+clawhub package inspect @xquik/tweetclaw
+```
+
+TweetClaw canonical plugin page: https://clawhub.ai/plugins/@xquik/tweetclaw
 
 Install
 
@@ -72,6 +82,6 @@ clawhub publish ./my-skill --slug my-skill --name "My Skill" --version 1.2.0 --c
 
 Notes
 
-- Default registry: https://clawhub.com (override with CLAWHUB_REGISTRY or --registry)
+- Default registry: https://clawhub.ai (legacy https://clawhub.com redirects there; override with CLAWHUB_REGISTRY or --registry)
 - Default workdir: cwd (falls back to OpenClaw workspace); install dir: ./skills (override with --workdir / --dir / CLAWHUB_WORKDIR)
 - Update command hashes local files, resolves matching version, and upgrades to latest unless --version is set
